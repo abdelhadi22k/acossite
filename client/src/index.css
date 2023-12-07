@@ -1,0 +1,1053 @@
+body {
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mainColor1: #35155d;
+  --mainColor2: #512b81;
+  --mainColor3: #4477ce;
+  --mainColor4: #8cabff;
+}
+
+.navbar {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+}
+
+#responsive-navbar-nav {
+  background-color: #fff;
+}
+
+.padding {
+  padding-bottom: 55px;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navLink {
+  margin-left: 20%;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brendImg {
+  height: 35px;
+  transition: 0.5s;
+}
+
+.brendImg:hover {
+  transform: scale(1.2);
+}
+
+.login {
+  padding: 4px 16px;
+  background-color: var(--mainColor3);
+  border-radius: 8px;
+}
+
+.login a {
+  color: #fff;
+}
+
+/* homepage style */
+.homepage {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.shade {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #000000cb;
+}
+
+.homeSection {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mainImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainInfo {
+  text-align: start;
+  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.mainInfo h1 {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.mainInfo p {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.infobutton {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.infobutton1 {
+  width: 150px;
+  border: none;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--mainColor3);
+  margin-right: 16px;
+  border: 1px solid var(--mainColor3);
+  color: #fff;
+}
+
+.infobutton2 {
+  width: 150px;
+
+  border: none;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-right: 16px;
+  border: 1px solid var(--mainColor3);
+  color: #fff;
+  background-color: #eeeeee00 !important;
+}
+
+.acount {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.acount span {
+  font-size: 14px;
+  padding: 4px 16px;
+  margin-right: 16px;
+}
+
+.acount a i {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  margin: 0 6px;
+}
+
+.acount a {
+  text-decoration: none;
+}
+
+.margen {
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .homeSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .mainInfo {
+    min-height: 50vh;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainInfo h1 {
+    font-size: 20px;
+  }
+
+  .infobutton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .infobutton button {
+    margin-top: 6px;
+  }
+
+  .acount {
+    display: flex;
+    margin-top: 6px;
+  }
+
+  .acount span {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .acount a i {
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0 6px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1220px) {
+  .homeSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .mainInfo {
+    min-height: 50vh;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainInfo h1 {
+    font-size: 50px;
+  }
+
+  .infobutton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .infobutton button {
+    margin-top: 6px;
+  }
+
+  .acount {
+    display: flex;
+    margin-top: 6px;
+  }
+
+  .acount span {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .acount a i {
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0 6px;
+  }
+}
+
+.serviceSection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.serviceInfSection {
+  width: 50%;
+}
+
+.serviceInfSection h1 {
+  font-size: 64px;
+}
+
+.serviceInfSection p {
+  width: 70%;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.serviceInfSection span {
+  color: var(--mainColor3);
+  margin-right: 8px;
+}
+
+.serviceTitleSection {
+  width: 50%;
+}
+
+.line {
+  height: 2px;
+  background-color: var(--mainColor3);
+}
+
+.serviceBox {
+  height: 160px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.serviceBox h1 {
+  font-size: 40px;
+  margin-right: auto;
+}
+
+.serviceBox span {
+  color: var(--mainColor3);
+  font-size: 24px;
+  height: 100%;
+  padding-top: 20px;
+  margin-right: 50px;
+}
+
+.serviceBox a {
+  margin-left: auto;
+  color: var(--mainColor3);
+  height: 100%;
+  font-size: 22px;
+  padding-top: 90px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .serviceSection {
+    margin-top: 55px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviceInfSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviceInfSection h1 {
+    font-size: 50px;
+  }
+
+  .serviceInfSection p {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .serviceTitleSection {
+    width: 100%;
+  }
+
+  .serviceBox h1 {
+    font-size: 24px;
+    margin-right: auto;
+  }
+
+  .serviceBox span {
+    color: var(--mainColor3);
+    font-size: 18px;
+    height: 100%;
+    padding-top: 20px;
+    margin-right: 50px;
+  }
+
+  .serviceBox a {
+    margin-left: auto;
+    color: var(--mainColor3);
+    height: 100%;
+    font-size: 16px;
+    padding-top: 90px;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1220px) {
+  .serviceSection {
+    margin-top: 55px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviceInfSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviceInfSection h1 {
+    font-size: 64px;
+  }
+
+  .serviceInfSection p {
+    width: 70%;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .serviceTitleSection {
+    width: 100%;
+  }
+
+  .serviceBox h1 {
+    font-size: 40px;
+    margin-right: auto;
+  }
+
+  .serviceBox span {
+    color: var(--mainColor3);
+    font-size: 18px;
+    height: 100%;
+    padding-top: 20px;
+    margin-right: 50px;
+  }
+
+  .serviceBox a {
+    margin-left: auto;
+    color: var(--mainColor3);
+    height: 100%;
+    font-size: 16px;
+    padding-top: 90px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .serviceSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.SkillsEndExperience {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, var(--mainColor3), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.SkillsEndExperienceholder {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills {
+  width: 50%;
+}
+
+.skills h4 {
+  font-size: 40px;
+  margin-top: 16px;
+}
+
+.skills h1 {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.skills p {
+  width: 70%;
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skillHolder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 330px;
+}
+
+.skillTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+.skillTitle img {
+  width: 70px;
+  margin-bottom: 16px;
+}
+
+.experience {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.experience h4 {
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.experienceHolder {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 32px 0px;
+}
+
+.experienceHolder span {
+  margin-right: 32px;
+}
+
+.lightline {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .SkillsEndExperienceholder {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills h1 {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+
+  .skills h1 br {
+    display: none;
+  }
+
+  .skills p {
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .skillHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 330px;
+  }
+
+  .skillTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px;
+  }
+
+  .experience {
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .experienceHolder {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 32px 0px;
+  }
+
+  .experienceHolder h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1220px) {
+  .SkillsEndExperienceholder {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills h1 {
+    font-size: 64px;
+    line-height: 1.5;
+  }
+
+  .skills h1 br {
+    display: none;
+  }
+
+  .skills p {
+    text-align: center;
+    width: 70%;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .skillHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 330px;
+  }
+
+  .skillTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px;
+  }
+
+  .experience {
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .experienceHolder {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 32px 0px;
+  }
+}
+
+/* project style */
+
+.projectSection {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.projectSection h1 {
+  font-size: 64px;
+  margin-top: 128px;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectBox {
+  background-color: #000;
+  margin: 32px 32px;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.projectBox img {
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.projectBox:hover img {
+  opacity: 0.3;
+}
+.projectBox h6 {
+  position: absolute;
+  color: #fff;
+  display: none;
+  transition: 0.5s;
+}
+.projectBox:hover h6 {
+  position: absolute;
+  color: #fff;
+  display: block;
+}
+.ProjectContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.totalPages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.PagesButton {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2px 8px;
+  margin: 8px;
+  color: var(--mainColor3);
+  font-weight: 700;
+  border: none;
+}
+.PagesButton:focus {
+  color: #fff;
+  background-color: var(--mainColor3);
+}
+
+.showcatgrys {
+  max-width: 100%;
+}
+.btnx {
+  border: none;
+  background-color: #fff;
+  width: 50px;
+  margin: 4px;
+}
+.btnx:focus {
+  background-color: var(--mainColor3);
+  color: #fff;
+  width: 50px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .projectSection h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+.opinionsPage {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  color: #fff;
+}
+.opinion {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opinioninfo {
+  width: 50%;
+}
+.opinioninfo h1 {
+  width: 100%;
+  font-size: 64px;
+}
+.opinioninfo p {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.opinionClient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 128px;
+  position: relative;
+  width: 50%;
+  min-height: 300px;
+}
+
+.opinionsBox {
+  background-color: #fff;
+  width: 250px;
+  min-height: 350px;
+  border-radius: 8px;
+  color: #000;
+}
+.opinionsBox p {
+  padding: 4px;
+}
+
+.SwiperSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 340px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .opinion {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .opinioninfo {
+    width: 100%;
+  }
+  .opinioninfo h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .opinioninfo p {
+    width: 100%;
+  }
+  .opinionClient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 16px;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+  }
+  .opinionsBox {
+    background-color: #fff;
+    width: 230px;
+    min-height: 350px;
+    border-radius: 8px;
+    color: #000;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1220px) {
+  .opinion {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .opinioninfo {
+    width: 100%;
+  }
+  .opinioninfo h1 {
+    width: 100%;
+  }
+  .opinioninfo p {
+    width: 100%;
+  }
+  .opinionClient {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+  }
+  .opinionsBox {
+    margin-top: 16px;
+    margin-left: 32px;
+    background-color: #fff;
+    width: 230px;
+    min-height: 350px;
+    border-radius: 8px;
+    color: #000;
+  }
+}
+.connectMe {
+  margin-top: 20vh;
+  min-height: 80vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, var(--mainColor3), black);
+  color: #fff;
+}
+
+.connectMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connectMeInfo {
+  width: 50%;
+}
+.connectMeInfo h1 {
+  font-size: 64px;
+}
+
+.connectHolder {
+  margin-top: 64px;
+}
+.connectMeImg {
+  margin-top: 128px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.connectBox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.connectBox h5 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.connectIconInfo i {
+  margin-top: 10px;
+  font-size: 26px;
+  margin-right: 8px;
+}
+.connectIcon {
+  margin-right: 64px;
+  font-size: 60px;
+}
+.Lastlightline {
+  margin-top: 8vh;
+}
+
+.copyRiht {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+
+  .connectMeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .connectMeImg {
+    margin-top: 128px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .connectMeInfo h1 {
+    font-size: 50px;
+  }
+  .connectMeInfo {
+    width: 100%;
+  }
+  .connectIcon {
+    margin-right: 16px;
+    font-size: 30px;
+  }
+  .connectBox h5 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+}
+@media (min-width: 500px) and (max-width: 1220px) {
+  .connectMeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+  }
+  .connectMeImg {
+    margin-top: 128px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .connectMeInfo {
+    width: 100%;
+  }
+
+}
